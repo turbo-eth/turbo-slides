@@ -10,7 +10,6 @@ export const TurboConnect = ({ className }) => {
   return (
     <div className={classes}>
       <motion.div
-        
         initial="hidden"
         whileInView="show"
         animate="show"
@@ -27,9 +26,7 @@ export const TurboConnect = ({ className }) => {
           <div className="col-span-6 text-sm text-left flex flex-col justify-center">
             <div className="">
               <motion.div className="mx-auto mt-6 " variants={FADE_DOWN_ANIMATION_VARIANTS}>
-                <motion.h1
-                  className="slide-title"
-                  variants={FADE_DOWN_ANIMATION_VARIANTS}>
+                <motion.h1 className="slide-title" variants={FADE_DOWN_ANIMATION_VARIANTS}>
                   Wallet
                 </motion.h1>
 

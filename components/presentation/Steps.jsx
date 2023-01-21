@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export const Steps = ({ children }) => {
   const renderChildren = () => {
@@ -7,10 +7,10 @@ export const Steps = ({ children }) => {
         <element.type order={index} {...element.props}>
           {element.props.children}
         </element.type>
-      );
-    });
-  };
-  return <div>{renderChildren()}</div>;
-};
+      )
+    })
+  }
+  return <div>{renderChildren()}</div>
+}
 
-export default Steps;
+export default Steps

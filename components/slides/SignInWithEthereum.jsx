@@ -9,7 +9,6 @@ export const SignInWithEthereum = ({ className }) => {
   return (
     <div className={classes}>
       <motion.div
-        
         initial="hidden"
         whileInView="show"
         animate="show"

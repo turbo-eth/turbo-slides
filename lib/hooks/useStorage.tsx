@@ -1,5 +1,9 @@
+// @ts-nocheck
+
 import { useEffect, useState } from 'react'
+
 import { useRouter } from 'next/router'
+
 import { useCurrentSlide } from '@/lib/context/CurrentSlideContext'
 
 const keys = {
