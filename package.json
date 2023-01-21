@@ -1,0 +1,57 @@
+{
+  "name": "@turbo-eth/turbo-slides",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@next/font": "^13.1.4",
+    "@next/mdx": "^11.0.1",
+    "@rainbow-me/rainbowkit": "0.8.1",
+    "@svgr/webpack": "^6.5.1",
+    "@wagmi/core": "^0.8.0",
+    "@wagmi/chains": "^0.1.7",
+    "clsx": "^1.2.1",
+    "ethers": "^5.0.0",
+    "framer-motion": "^4.1.17",
+    "jotai": "^1.13.1",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.1.0",
+    "react-swipeable": "^6.1.2",
+    "react-syntax-highlighter": "^15.4.4",
+    "styled-components": "^5.2.3",
+    "tailwindcss": "^3.2.4",
+    "wagmi": "^0.9.0"
+  },
+  "devDependencies": {
+    "@tsconfig/next": "^1.0.4",
+    "@types/react": "^18.0.27",
+    "autoprefixer": "^10.4.13",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.1.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-tailwindcss": "^3.5.0",
+    "eslint-plugin-testing-library": "^5.5.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "glob": "^8.1.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.0",
+    "typescript": "4.9.4"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

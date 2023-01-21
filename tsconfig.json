@@ -1,0 +1,41 @@
+{
+  "extends": "@tsconfig/next/tsconfig.json",
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "*": ["types/*.d.ts"],
+      "@/*": ["@/*"],
+      "@/context/*": ["lib/context/*"],
+      "@/components/*": ["components/*"],
+      "@/lib/*": ["lib/*"],
+      "@/actions/*": ["lib/actions/*"],
+      "@/hooks/*": ["lib/hooks/*"],
+      "@/data/*": ["data/*"],
+      "@/layouts/*": ["components/layouts/*"],
+      "@/providers/*": ["components/providers/*"],
+      "@/styles/*": ["styles/*"],
+      "@/types": ["types/index"],
+      "@/types/*": ["types/*"],
+      "@/public/*": ["public/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "tailwind.config.js"],
+  "exclude": ["node_modules"]
+}
