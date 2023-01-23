@@ -1,3 +1,4 @@
+![turbo-slides-banner](https://user-images.githubusercontent.com/3408362/213998897-67cf4eb7-e94b-4af0-8ea3-9e241491a84b.png)
 
 # ⚡️ Turbo Slides
 
@@ -7,15 +8,14 @@ Create presentation decks using MDX, React, and [Next.js](https://nextjs.org/) w
 
 - 📽 React-based Slideshow
 - ✍️ Write using Markdown, React components, even HTML!
-- 🎨 Themeable with CSS vars or Styled Components
-- 👉 Swipe to change slides
+- 🎨 Themeable with Tailwind or Styled Components
 - ♻️ Sync slides between browser tabs
 - 👨‍💻 Presentation Mode
 - 📝 Speaker Notes
 
 ## Getting Started
 
-1. Clone the project: `git clone https://github.com/whoisryosuke/next-mdx-deck`
+1. Clone the project: `git clone https://github.com/turbo-eth/turbo-slides
 2. Install dependencies: `npm i` or `yarn`
 3. Run the dev server: `npm run dev` or `yarn dev`
 4. Edit the first slide in `/pages/index.mdx` and save to [**see changes**](http://localhost:3000/)!
