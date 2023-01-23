@@ -1,12 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin')
 module.exports = {
   darkMode: 'class',
-  content: ['./pages/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx}', './layouts/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: ['./pages/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fontFamily: {
-        primary: ['var(--raleway-font)', 'system-ui', 'sans-serif'],
         raleway: ['var(--raleway-font)', 'system-ui', 'sans-serif'],
       },
       fontSize: {

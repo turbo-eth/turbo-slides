@@ -1,17 +1,11 @@
 {
   "ts-node": {
-    "require": [
-      "tsconfig-paths/register"
-    ]
+    "require": ["tsconfig-paths/register"]
   },
   "compilerOptions": {
     "baseUrl": ".",
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -25,58 +19,16 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "*": [
-        "types/*.d.ts"
-      ],
-      "@/*": [
-        "@/*"
-      ],
-      "@/context/*": [
-        "lib/context/*"
-      ],
-      "@/components/*": [
-        "components/*"
-      ],
-      "@/lib/*": [
-        "lib/*"
-      ],
-      "@/actions/*": [
-        "lib/actions/*"
-      ],
-      "@/hooks/*": [
-        "lib/hooks/*"
-      ],
-      "@/data/*": [
-        "data/*"
-      ],
-      "@/layouts/*": [
-        "components/layouts/*"
-      ],
-      "@/providers/*": [
-        "components/providers/*"
-      ],
-      "@/styles/*": [
-        "styles/*"
-      ],
-      "@/types": [
-        "types/index"
-      ],
-      "@/types/*": [
-        "types/*"
-      ],
-      "@/public/*": [
-        "public/*"
-      ]
+      "*": ["types/*.d.ts"],
+      "@/*": ["./*"],
+      "@/context/*": ["lib/context/*"],
+      "@/lib/*": ["lib/*"],
+      "@/actions/*": ["lib/actions/*"],
+      "@/hooks/*": ["lib/hooks/*"],
+      "@/layouts/*": ["components/layouts/*"],
+      "@/providers/*": ["components/providers/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "tailwind.config.js"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "tailwind.config.js"],
+  "exclude": ["node_modules"]
 }

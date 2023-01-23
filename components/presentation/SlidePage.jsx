@@ -212,7 +212,7 @@ export default function SlidePage({ children, next }) {
       <GlobalStyle />
       <Storage />
       <PresentationMode mode={mode} notes={slideNotes()} currentSlide={currentSlide}>
-        <div id="slide" style={{ width: '100%' }}>
+        <div id="slide" style={{ width: '100%' }} className="w-full mx-20">
           {renderSlide()}
         </div>
       </PresentationMode>
