@@ -1,6 +1,6 @@
 ![turbo-slides-banner](https://user-images.githubusercontent.com/3408362/213998897-67cf4eb7-e94b-4af0-8ea3-9e241491a84b.png)
 
-# ⚡️ Turbo Slides
+# 📖 Turbo Slides
 
 Create presentation decks using MDX, React, and [Next.js](https://nextjs.org/) with Web3 capabilities
 
