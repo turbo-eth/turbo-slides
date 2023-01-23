@@ -3,9 +3,15 @@ import classNames from 'clsx'
 import { motion } from 'framer-motion'
 
 import { FADE_DOWN_ANIMATION_VARIANTS } from '@/lib/design'
+import { useSignMessage } from 'wagmi'
 
 export const SignMessage = ({ className }) => {
   const classes = classNames(className, 'SignMessage', 'container mx-auto max-w-screen-xl')
+
+  const { data, isError, isLoading, isSuccess, signMessage } = useSignMessage({
+    message: 'gm wagmi frens',
+  })
+
   return (
     <div className={classes}>
       <motion.div
@@ -43,8 +49,19 @@ export const SignMessage = ({ className }) => {
           </div>
           <div className="col-span-6 items-center flex flex-col justify-center">
             <motion.div className="mx-auto mt-6 " variants={FADE_DOWN_ANIMATION_VARIANTS}>
-              <button className="btn btn-primary">Sign Message</button>
+              <button className="btn btn-primary" onClick={() => signMessage()}>
+                Sign Message
+              </button>
             </motion.div>
+            <div className="mt-10">
+              {isSuccess && (
+                <div className="break-all">
+                  Signature
+                  <br /> {data}
+                </div>
+              )}
+              {isError && <div>Error signing message</div>}
+            </div>
           </div>
         </div>
       </motion.div>
