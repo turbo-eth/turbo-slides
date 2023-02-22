@@ -94,7 +94,7 @@ This way you can view your presentation on one monitor, while displaying the sli
 
 Speaker notes are only displayed during presentation mode. This allows you to write private notes to yourself that you can see in "presentation" mode, while the audience only sees the other slide content in "slideshow" mode.
 
-Speaker notes can contain **Markdown**, **MDX/JSX**, and even **HTML** _(as JSX)_. The notes are displayed in a scrollable window to the side of slide content during "presenation" mode.
+Speaker notes can contain **Markdown**, **MDX/JSX**, and even **HTML** _(as JSX)_. The notes are displayed in a scrollable window to the side of slide content during "presentation" mode.
 
 To create speaker notes, you use the `<SpeakerNotes>` component inside of your MDX files. No need to import it, it's [automatically imported into any MDX slide page](components/MDXProvider.jsx). You can also use it multiple times within the same slide, all the notes (per slide) will be combined.
 
@@ -116,7 +116,7 @@ Private notes here.
 
 MDX allows you to use JSX inline or import components, but if you want to use a React component across all slides without importing it, you can use the `<MDXProvider>` component. This component wraps the app in a "context" that provides MDX with components to pass into the parser.
 
-This also lets you replace Markdown parsed HTML elements with React components, like replacing `## Headings` with `<Heading as="h2">` instead of the default `<h2>`. This comes in handy if you have a React component library and you want to use it's primitives like `<Text>` for paragraphs.
+This also lets you replace Markdown parsed HTML elements with React components, like replacing `## Headings` with `<Heading as="h2">` instead of the default `<h2>`. This comes in handy if you have a React component library and you want to use its primitives like `<Text>` for paragraphs.
 
 You can pass new components, or swap HTML elements inside the `mdComponents` object in the `/components/MDXProvider.jsx` file:
 
